@@ -1,0 +1,8 @@
+AutomationTest\BrightTalkTest\BrowserSetup.class
+AutomationTest\BrightTalkTest\JSONHelper.class
+AutomationTest\BrightTalkTest\LoadProp.class
+AutomationTest\BrightTalkTest\BasePage.class
+AutomationTest\BrightTalkTest\APIHelper.class
+AutomationTest\BrightTalkTest\HomePage.class
+AutomationTest\BrightTalkTest\iniClass.class
+AutomationTest\BrightTalkTest\SamplePage.class

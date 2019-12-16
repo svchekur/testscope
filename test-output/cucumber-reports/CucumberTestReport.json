@@ -1,0 +1,672 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 375485119,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTestAPI()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Should see LIST USERS of all existing users",
+        "description": "",
+        "id": "api-test;should-see-list-users-of-all-existing-users",
+        "after": [
+          {
+            "result": {
+              "duration": 10809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 203135826,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I get the default list of users for on 1st page",
+            "match": {
+              "location": "StepDefinition.iGetTheDefaultListofusers()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1196337610,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get the list of all users",
+            "match": {
+              "location": "StepDefinition.iGetTheListOfAllUsers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 540119148,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should see total users count equals to number of user ids",
+            "match": {
+              "location": "StepDefinition.iShouldMatchTotalCount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 182614,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTestAPI()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Should see SINGLE USER data",
+        "description": "",
+        "id": "api-test;should-see-single-user-data",
+        "after": [
+          {
+            "result": {
+              "duration": 11947,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 80306563,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I make a search for user 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinition.iMakeASearchForUser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 34058211,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see following user data",
+            "match": {
+              "location": "StepDefinition.IShouldSeeFollowingUserData(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "first_name",
+                  "email"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Emma",
+                  "emma.wong@reqres.in"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 204231,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTestAPI()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Should see SINGLE USER NOT FOUND error code",
+        "description": "",
+        "id": "api-test;should-see-single-user-not-found-error-code",
+        "after": [
+          {
+            "result": {
+              "duration": 6258,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 426001841,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I make a search for user 55",
+            "match": {
+              "arguments": [
+                {
+                  "val": "55",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinition.iMakeASearchForUser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 907377,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I receive error code 404 in response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefinition.iReceiveErrorCodeInResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 167253,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTestAPI()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "CREATE a user",
+        "description": "",
+        "id": "api-test;create-a-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 6827,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 413040287,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I create user with following Peter Manager",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Peter",
+                  "offset": 29
+                },
+                {
+                  "val": "Manager",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinition.iCreateUserWithFollowing(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6814714,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "response should contain following data",
+            "match": {
+              "location": "StepDefinition.iReceiveErrorCodeInResponse(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job",
+                  "id",
+                  "createdAt"
+                ],
+                "line": 25
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 143360,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTestAPI()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "CREATE a user",
+        "description": "",
+        "id": "api-test;create-a-user;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 7964,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 384033806,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I create user with following Liza Sales",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Liza",
+                  "offset": 29
+                },
+                {
+                  "val": "Sales",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinition.iCreateUserWithFollowing(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6648599,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "response should contain following data",
+            "match": {
+              "location": "StepDefinition.iReceiveErrorCodeInResponse(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "job",
+                  "id",
+                  "createdAt"
+                ],
+                "line": 25
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 273066,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTestAPI()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "LOGIN - SUCCESSFUL by a user",
+        "description": "",
+        "id": "api-test;login---successful-by-a-user",
+        "after": [
+          {
+            "result": {
+              "duration": 6258,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 369420769,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I login succesfully with following data",
+            "match": {
+              "location": "StepDefinition.iLoginSuccesfullyWithFollowingData(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "Password"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "eve.holt@reqres.in",
+                  "cityslicka"
+                ],
+                "line": 36
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 155307,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTestAPI()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "LOGIN - UNSUCCESSFUL by a user",
+        "description": "",
+        "id": "api-test;login---unsuccessful-by-a-user",
+        "after": [
+          {
+            "result": {
+              "duration": 10808,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 241429412,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I login unsuccesfully with following data",
+            "match": {
+              "location": "StepDefinition.iLoginUnsuccesfullyWithFollowingData(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "Password"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "eve.holt@reqres.in",
+                  ""
+                ],
+                "line": 42
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 38,
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 141653,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTestAPI()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "Should see list of users with DELAYED RESPONSE",
+        "description": "",
+        "id": "api-test;should-see-list-of-users-with-delayed-response",
+        "after": [
+          {
+            "result": {
+              "duration": 10809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5239330783,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I wait for user list to load",
+            "match": {
+              "location": "StepDefinition.iWaitForUserListToLoad()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 75919864,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I should see that every user has a unique id",
+            "match": {
+              "location": "StepDefinition.iShouldSeeThatEveryUserHasAUniqueID()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 44,
+            "name": "@API"
+          }
+        ]
+      }
+    ],
+    "name": "API test",
+    "description": "",
+    "id": "api-test",
+    "keyword": "Feature",
+    "uri": "src/test/java/API-Test.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3958925120,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.initializeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Sample",
+        "description": "",
+        "id": "brighttalk--sample-test;sample",
+        "after": [
+          {
+            "result": {
+              "duration": 866804452,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.screenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1287723274,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the home page",
+            "match": {
+              "location": "StepDefinition.iAmOnTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@UI"
+          }
+        ]
+      }
+    ],
+    "name": "BrightTalk  Sample Test",
+    "description": "",
+    "id": "brighttalk--sample-test",
+    "keyword": "Feature",
+    "uri": "src/test/java/SampleTest.feature"
+  }
+]
