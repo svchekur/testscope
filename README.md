@@ -48,7 +48,7 @@ Note:
     - JAVA SDK 1.8
     - Maven CLI
 - Steps
-    - Copy src, pom.xml and testng.xml to local folder. README.md is optional
+    - Clone the project to local
     - Goto command line or any IDE that supports JAVA & Maven dependencies
     - We many need to import the Maven dependencies (Scope got set to Compile for Newly added dependencies in pom.xm)
     - Execute command: `mvn test` or `mvn install`
