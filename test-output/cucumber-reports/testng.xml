@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testng-results failed="0" passed="9" skipped="0" total="9">
+<suite duration-ms="15704" name="cucumber.runtime.formatter.TestNGFormatter">
+<test duration-ms="15704" name="cucumber.runtime.formatter.TestNGFormatter">
+<class name="API test">
+<test-method duration-ms="2315" finished-at="2019-12-16T20:08:38Z" name="Should see LIST USERS of all existing users" started-at="2019-12-16T20:08:36Z" status="PASS"/>
+<test-method duration-ms="114" finished-at="2019-12-16T20:08:38Z" name="Should see SINGLE USER data" started-at="2019-12-16T20:08:38Z" status="PASS"/>
+<test-method duration-ms="427" finished-at="2019-12-16T20:08:39Z" name="Should see SINGLE USER NOT FOUND error code" started-at="2019-12-16T20:08:38Z" status="PASS"/>
+<test-method duration-ms="420" finished-at="2019-12-16T20:08:39Z" name="CREATE a user" started-at="2019-12-16T20:08:39Z" status="PASS"/>
+<test-method duration-ms="390" finished-at="2019-12-16T20:08:39Z" name="CREATE a user_2" started-at="2019-12-16T20:08:39Z" status="PASS"/>
+<test-method duration-ms="369" finished-at="2019-12-16T20:08:40Z" name="LOGIN - SUCCESSFUL by a user" started-at="2019-12-16T20:08:39Z" status="PASS"/>
+<test-method duration-ms="241" finished-at="2019-12-16T20:08:40Z" name="LOGIN - UNSUCCESSFUL by a user" started-at="2019-12-16T20:08:40Z" status="PASS"/>
+<test-method duration-ms="5315" finished-at="2019-12-16T20:08:45Z" name="Should see list of users with DELAYED RESPONSE" started-at="2019-12-16T20:08:40Z" status="PASS"/>
+</class>
+<class name="BrightTalk  Sample Test">
+<test-method duration-ms="6113" finished-at="2019-12-16T20:08:51Z" name="Sample" started-at="2019-12-16T20:08:45Z" status="PASS"/>
+</class>
+</test>
+</suite>
+</testng-results>
